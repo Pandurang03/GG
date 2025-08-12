@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCOURA - Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="ENCOURA Logo">
+            <h1>ENCOURA</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Your Mental Health Companion</h2>
+            <p>We're here to support you every step of the way with compassionate, accessible mental health support.</p>
+            <a href="chatbot.html" class="btn">Talk to Chatbot</a>
+        </div>
+    </section>
+
+    <!-- About Sections -->
+    <section class="about-section">
+        <div class="about-item">
+            <div class="about-image">
+                <img src="images/mission.png" alt="Our Mission">
+            </div>
+            <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>To provide accessible, compassionate mental health support through innovative technology, breaking down barriers to care and fostering emotional well-being for all.</p>
+            </div>
+        </div>
+
+        <div class="about-item reverse">
+            <div class="about-image">
+                <img src="images/vision.png" alt="Our Vision">
+            </div>
+            <div class="about-text">
+                <h2>Our Vision</h2>
+                <p>A world where mental health support is available to everyone, anytime, anywhere - without stigma, without barriers, and without judgment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Compassion</h3>
+                <p>We approach every interaction with empathy and kindness.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-universal-access"></i>
+                <h3>Accessibility</h3>
+                <p>We believe support should be available to all.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>We continuously improve our technology to better serve you.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-lock"></i>
+                <h3>Confidentiality</h3>
+                <p>Your privacy and trust are paramount.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="key-features">
+    <div class="features-container">
+      <div class="features-title">
+        <h2>KEY FEATURES</h2>
+        <div class="title-accent"></div>
+      </div>
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-number">01</div>
+          <div class="feature-content">
+            <h3>Real-Time Emotional Support</h3>
+            <p>Instant, empathetic conversations using advanced AI to provide context-aware, compassionate responses.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">02</div>
+          <div class="feature-content">
+            <h3>24/7 Mental Health Assistance</h3>
+            <p>Round-the-clock support for immediate help, accessible in all time zones during emergencies.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">03</div>
+          <div class="feature-content">
+            <h3>Confidential & Safe Space</h3>
+            <p>Maintain privacy and anonymity with secure data handling in a judgment-free environment.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">04</div>
+          <div class="feature-content">
+            <h3>Personalized Coping Strategies</h3>
+            <p>Tailored advice and practical techniques like mindfulness and stress management based on your emotions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <h2>Why Choose Encoura?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Availability</h3>
+                <p>Support whenever you need it, day or night.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-user-shield"></i>
+                <h3>Confidential</h3>
+                <p>Your conversations are private and secure.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-comments"></i>
+                <h3>Non-judgmental</h3>
+                <p>A safe space to express yourself freely.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Personalized Support</h3>
+                <p>Tailored responses to your unique needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Helper -->
+    <div class="breathing-helper">
+        <button class="floating-btn" id="breatheBtn">Breathe with Me</button>
+        <div class="breathing-animation" id="breathingAnimation">
+            <div class="circle"></div>
+            <div class="instructions" id="instructions">Click to start</div>
+            <div class="counter" id="counter"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ENCOURA Logo">
+                <h3>ENCOURA</h3>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="chatbot.html">Chatbot</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+                <div class="link-group">
+                    <h4>About</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:support@encoura.com">support@encoura.com</a>
+                    <!-- <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</body>
+</html>

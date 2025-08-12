@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCOURA - Mental Health Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="ENCOURA Logo">
+            <h1>ENCOURA</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="resources.html" class="active">Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    
+
+    <!-- Featured Resources Slider -->
+    <section class="featured-resources"> <br><br>
+        <h2>Featured Resources</h2>      
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="resource-card">
+                        <img src="images/blog-featured.png" alt="Mental Health Blog">
+                        <div class="resource-info">
+                            <h3>Anxiety: What Is Anxiety and its Causes, Symptoms & Types</h3>
+                            <p>Learn about anxiety and how to manage it effectively.</p>
+                            <a href="https://heartitout.in/blogs/anxiety/anxiety-what-is-anxiety-and-its-causes-symptoms-amp-types/" class="btn">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="resource-card">
+                        <img src="images/playlist-featured.jpg  " alt="Calming Playlist">
+                        <div class="resource-info">
+                            <h3>Playlist for my mental peace</h3>
+                            <p>Find tranquility with this curated playlist.</p>
+                            <a href="https://open.spotify.com/playlist/4dqSd7Bg10xfXr59nfLKyv?si=816a5b12cbad4225" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="resource-card">
+                        <img src="images/meditation-featured.png" alt="Guided Meditation">
+                        <div class="resource-info">
+                            <h3>Meditation music to calm your anxiety</h3>
+                            <p>Meditate and find peace with this soothing playlist.</p>
+                            <a href="https://open.spotify.com/playlist/4KIIAFI5oqKfJOCM9tt6k4?si=42270b722edc4785" class="btn">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="resource-card">
+                        <img src="images/podcast-featured.jpeg" alt="Mind Matters Podcast">
+                        <div class="resource-info">
+                            <h3>Mind Matters Podcast</h3>
+                            <p>Expert discussions on mental health</p>
+                            <a href="https://open.spotify.com/show/0ITcXLiOzg1yLfpwzmeXUL" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="resource-card">
+                        <img src="images/book-featured.jpg" alt="Don't Believe Everything You Think">
+                        <div class="resource-info">
+                            <h3>Don't Believe Everything You Think</h3>
+                            <p>Discover how to conquer anxiety, self-doubt, and self-sabotage without depending on motivation or willpower.</p>
+                            <a href="https://www.amazon.in/Dont-Believe-Everything-You-Think/dp/935543135X/ref=sr_1_4?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYpNNouNvw41L5k9j3umneSQaBtGRojmgYL8PoJ7yWGP2-Zm_iipzp8uJt8bQzzI8gk.htWpUNhtafc7cho3DdHH4Vr-2wap1cpBL1F7AJ1nT-c&dib_tag=se&keywords=self-help+books&qid=1743700011&sprefix=self-help+books%2Caps%2C202&sr=8-4" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>Helpful Blogs</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <div class="resources-grid">
+            <!-- Blog 1 -->
+            <div class="resource-item">
+                <img src="images/blog1.jpg" alt="Managing Anxiety">
+                <h3>10 Natural Ways to Reduce Anxiety</h3>
+                <p>Practical techniques to reduce anxiety in daily life</p>
+                <a href="https://www.healthline.com/health/natural-ways-to-reduce-anxiety" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 2 -->
+            <div class="resource-item">
+                <img src="images/blog2.jpeg" alt="Mindfulness">
+                <h3>Getting Started with Mindfulness</h3>
+                <p>Learn the basics of mindfulness practice</p>
+                <a href="https://www.mindful.org/meditation/mindfulness-getting-started/" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 3 -->
+            <div class="resource-item">
+                <img src="images/blog3.jpeg" alt="Sleep Better">
+                <h3>Mastering Sleep Hygiene: Your Path to Quality Sleep</h3>
+                <p>Tips for better sleep and relaxation</p>
+                <a href="https://www.sleepfoundation.org/sleep-hygiene" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 4 -->
+            <div class="resource-item">
+                <img src="images/blog4.jpg" alt="Self-Care">
+                <h3>Self-Care Tips to Prioritize Your Mental Health</h3>
+                <p>Simple ways to practice self-care daily</p>
+                <a href="https://www.helpguide.org/mental-health/wellbeing/self-care-tips-to-prioritize-your-mental-health" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 5 -->
+            <div class="resource-item">
+                <img src="images/blog5.jpg" alt="Self-Care">
+                <h3>How To Change Your Behaviors & Thoughts</h3>
+                <p>Identify, challenge, and replace negative patterns</p>
+                <a href="https://psychcentral.com/blog/caregivers/2020/09/how-to-change-your-behaviors-thoughts#1" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 6 -->
+            <div class="resource-item">
+                <img src="images/blog6.png" alt="Self-Care">
+                <h3>The Importance of Mental Health Awareness</h3>
+                <p>Reduces stigma, promotes well-being, and encourages support</p>
+                <a href="https://www.pinerest.org/newsroom/articles/mental-health-awareness-blog/" class="resource-link">Read Article →</a>
+            </div>
+            <!-- Blog 7 -->
+            <div class="resource-item">
+                <img src="images/blog7.jpg" alt="Self-Care">
+                <h3>What is mental health?</h3>
+                <p>Know more on Emotional, psychological, and social well-being</p>
+                <a href="https://www.medicalnewstoday.com/articles/154543" class="resource-link">Read Article →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Random Act of Kindness Generator -->
+    <!-- <section class="kindness-generator">
+        <div class="generator-container">
+            <h2>Random Act of Kindness Generator</h2>
+            <p>Spread positivity with these simple ideas</p>
+            <div class="generator-result" id="kindness-idea">
+                Click the button below for an idea!
+            </div>
+            <button class="btn" id="generate-kindness">Generate Idea</button>
+        </div>
+    </section> -->
+
+    <!-- Playlists Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>Curated Playlists</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <div class="resources-grid">
+            <!-- Playlist 1 -->
+            <div class="resource-item">
+                <img src="images/playlist1.jpg" alt="Focus Music">
+                <h3>Deep Focus</h3>
+                <p>Music to enhance concentration</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/track/2CZk6xsvFInGqTJsDUbSAD?si=3cdc3adcdf924976" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://www.youtube.com/playlist?list=PLnOC9rlyvdSmS_9N9Gt6ckMeqUNX_WugG" class="platform-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+            <!-- Playlist 2 -->
+            <div class="resource-item">
+                <img src="images/playlist2.jpeg" alt="Relaxation">
+                <h3>Stress Relief</h3>
+                <p>Soothing sounds for relaxation</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/album/10gfXdTLAFMX7jA9qI2QO5?si=vp9PEJKfT7OMqQl-n0MS5A" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://youtu.be/bP9gMpl1gyQ?si=AYiIvmPbKt3cRUl9" class="platform-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+            <!-- Playlist 3 -->
+            <div class="resource-item">
+                <img src="images/playlist3.png" alt="Sleep Music">
+                <h3>Sleep Sounds</h3>
+                <p>Music to help you fall asleep</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/track/2fqRAIjEZektrmnxrs1B55?si=2bd3f98549a645e7" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://youtu.be/rA7m3iKpuko?si=vf841PyWfaU3lAlM" class="platform-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+            <!-- Playlist 4 -->
+            <div class="resource-item">
+                <img src="images/playlist4.jpeg" alt="Morning Motivation">
+                <h3>Morning Motivation</h3>
+                <p>Start your day with positive energy</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/album/3FiNTOGGiYhV3Iie0IPC2D" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://youtu.be/ljnGl5nvUJY?si=k-lftzjsUYCRqFan" class="platform-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guided Meditation Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>Guided Meditations</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <!-- <div class="tabs">
+            <button class="tab-button active" data-tab="video-meditations">Video</button>
+            <button class="tab-button" data-tab="audio-meditations">Audio</button>
+        </div> -->
+        
+        <div class="tab-content active" id="video-meditations">
+            <div class="resources-grid">
+                <!-- Video Meditation 1 -->
+                <div class="resource-item">
+                    <div class="video-thumbnail">
+                        <img src="images/meditation1.jpg" alt="Stress Relief Meditation">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>Guided Meditation for Calm (Anxiety / OCD / Depression / Pain)</h3>
+                    <p>Spoken by Michael Sealey</p>
+                    <a href="https://youtu.be/358IFvrnyKY?si=OUEPGIqtrW9VhSQr" class="resource-link">Watch Now →</a>
+                </div>
+                <!-- Video Meditation 2 -->
+                <div class="resource-item">
+                    <div class="video-thumbnail">
+                        <img src="images/meditation2.jpg" alt="Sleep Meditation">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>20 Minute Guided Meditation for Reducing Anxiety and Stress</h3>
+                    <p>Clear the Clutter to Calm Down</p>
+                    <a href="https://www.youtube.com/watch?v=MIr3RsUWrdo&ab_channel=TheMindfulMovement" class="resource-link">Watch Now →</a>
+                </div>
+                <!-- Video Meditation 3 -->
+                <div class="resource-item">
+                    <div class="video-thumbnail">
+                        <img src="images/meditation3.jpg" alt="Morning Meditation">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>40 minute guided meditation to calm anxiety</h3>
+                    <p> Your Path to Anxiety Relief with Chibs Okereke</p>
+                    <a href="https://www.youtube.com/watch?v=R2HXDlq2wm4&ab_channel=ChibsOkerekeMeditations" class="resource-link">Watch Now →</a>
+                </div>
+                <!-- Video Meditation 4 -->
+                <div class="resource-item">
+                    <div class="video-thumbnail">
+                        <img src="images/meditation4.jpg" alt="Anxiety Relief">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>10 Minute Meditation to Release Stress & Anxiety</h3>
+                    <p>Total Body Relaxation</p>
+                    <a href="https://www.youtube.com/watch?v=H_uc-uQ3Nkc&ab_channel=Lavendaire" class="resource-link">Watch Now →</a>
+                </div>
+                <!-- Video Meditation 5 -->
+                <div class="resource-item">
+                    <div class="video-thumbnail">
+                        <img src="images/meditation5.jpg" alt="Anxiety Relief">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>Guided Meditation for Deep Relaxation, Managing Anxiety, Releasing Stress, Mental Health</h3>
+                    <p>Relax, release stress, and calm your mind.</p>
+                    <a href="https://www.youtube.com/watch?v=lRSB4n3wxCA&ab_channel=LindaHallMeditation" class="resource-link">Watch Now →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="tab-content" id="audio-meditations"> -->
+            <!-- <div class="resources-grid"> -->
+                <!-- Audio Meditation 1 -->
+                <!-- <div class="resource-item">
+                    <img src="images/audio-med1.jpg" alt="Body Scan">
+                    <h3>Body Scan Meditation</h3>
+                    <p>Release tension through your body</p>
+                    <div class="platform-links">
+                        <a href="#" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="#" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                    </div>
+                </div> -->
+                <!-- Audio Meditation 2 -->
+                <!-- <div class="resource-item">
+                    <img src="images/audio-med2.jpg" alt="Breathing Exercise">
+                    <h3>Deep Breathing</h3>
+                    <p>Simple breathing for relaxation</p>
+                    <div class="platform-links">
+                        <a href="#" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="#" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                    </div>
+                </div> -->
+                <!-- Audio Meditation 3 -->
+                <!-- <div class="resource-item">
+                    <img src="images/audio-med3.jpg" alt="Loving Kindness">
+                    <h3>Loving Kindness</h3>
+                    <p>Cultivate compassion for yourself</p>
+                    <div class="platform-links">
+                        <a href="#" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="#" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                    </div>
+                </div> -->
+                <!-- Audio Meditation 4 -->
+                <!-- <div class="resource-item">
+                    <img src="images/audio-med4.jpg" alt="Mindful Walking">
+                    <h3>Mindful Walking</h3>
+                    <p>Meditation in motion</p>
+                    <div class="platform-links">
+                        <a href="#" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="#" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    </section>
+
+    <!-- Books Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>Recommended Books</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <div class="resources-grid">
+            <!-- Book 1 -->
+            <div class="resource-item">
+                <img src="images/book1.jpg" alt="The Happiness Trap">
+                <h3>The Happiness Trap</h3>
+                <p>Russ Harris</p>
+                <a href="https://www.amazon.in/Happiness-Trap-Struggling-Start-Living/dp/9382616764/ref=sr_1_2?crid=3S4JHOL0NPT2V&dib=eyJ2IjoiMSJ9.d4F9_IPtx7625RBpBM8GhOk7NGh5-mTAcub9Qntjccu53XXgwYFcxxOsptyq89tlgS-tx7BvPOlPg-D1wEgdpcXRWukXTL6nrDICXL8b_FDfnjle3JFsBZyTcNI0S0sCkiOWkaJSe_xE-GZVxl0nChbAB93I4NLns1NgO9dazhpx6pIBpCZkMWVQD1jRks8kfjH0fBZb-Zyt9HnHLuYMLhzoNpVq4uLagPD-399dUC8.6tz_cARx9mONpuXCAW2sEWt0a31S8nc2mA7qcyqPKHY&dib_tag=se&keywords=the+happiness+trap&nsdOptOutParam=true&qid=1743710647&sprefix=the+ha%2Caps%2C251&sr=8-2" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="resource-item">
+                <img src="images/book2.jpg" alt="The Body Keeps the Score">
+                <h3>The Body Keeps the Score</h3>
+                <p>Bessel van der Kolk</p>
+                <a href="https://www.amazon.in/Body-Keeps-Score-Bessel-Kolk/dp/0141978619/ref=sr_1_1_sspa?crid=3KPW07GQ294QV&dib=eyJ2IjoiMSJ9.DKmUiatt7xE1pPw4Uzs57M8hvVSe30kSGMr0KhDgZFwI3EFwLrwnWirlEGSx6kOY3EeJtRmpwhQiRRpsdhv9gPRcQf55_nATXdclH_GlS5YEqvxHq09xcW8cemNMXao_GQwkHgJHiOJ3efFP25-6AMS8AdvWlzMmBPaUw1wLo2xrK8vTMQZvtjuJUwS9UELv7UuSJNprsAQFm5hcGVN6ld560_KYiu5F-Hw8rVr7gSg.E9nHFJT_ow85c8YvTqbqDaX3l0lB2CTrDNDScnsWb0k&dib_tag=se&keywords=the+body+keeps+the+score&qid=1743710701&sprefix=the+body%2Caps%2C201&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 3 -->
+            <div class="resource-item">
+                <img src="images/book3.jpg" alt="The Courage To Be Disliked">
+                <h3>The Courage To Be Disliked</h3>
+                <p>Ichiro Kishimi and Fumitake Koga</p>
+                <a href="https://www.amazon.in/Courage-Be-Disliked-yourself-happiness/dp/1760630721/ref=sr_1_6?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743710380&sprefix=self-help+books%2Caps%2C202&sr=8-6" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 4 -->
+            <div class="resource-item">
+                <img src="images/book4.jpg" alt="How to Win Friends and Influence People">
+                <h3>How to Win Friends and Influence People</h3>
+                <p>Dale Carnegie</p>
+                <a href="https://www.amazon.in/Influence-Timeless-Relationships-Communication-Leadership/dp/B0DYYR6YD5/ref=sr_1_11_sspa?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743710380&sprefix=self-help+books%2Caps%2C202&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 5 -->
+            <div class="resource-item">
+                <img src="images/book5.jpg" alt="The Art of Letting Go">
+                <h3>The Art of Letting Go</h3>
+                <p>Nick Trenton</p>
+                <a href="https://www.amazon.in/Art-Letting-Go-Nick-Trenton/dp/0143465066/ref=sr_1_10?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743710380&sprefix=self-help+books%2Caps%2C202&sr=8-10" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 6 -->
+            <div class="resource-item">
+                <img src="images/book6.jpg" alt="The Power of Your Subconscious Mind">
+                <h3>The Power of Your Subconscious Mind</h3>
+                <p>Joseph Murphy</p>
+                <a href="https://www.amazon.in/Power-Your-Subconscious-Mind/dp/8194790832/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%3Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d&crid=2QY6T9RS2BRQW&cv_ct_cx=self-help+books&keywords=self-help+books&pd_rd_i=8194790832&pd_rd_r=bb28cb43-26fb-48b6-9b22-bb8bd246eaaa&pd_rd_w=IvrkU&pd_rd_wg=v3Jyi&pf_rd_p=70fd741c-68a9-470a-9805-115e3115104d&pf_rd_r=E2FNW9KKGB5H8Z7Q0VV0&qid=1743710380&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=self-help+books%2Caps%2C202&sr=1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 7 -->
+            <div class="resource-item">
+                <img src="images/book7.jpg" alt="Rewire Your Anxious Brain">
+                <h3>Rewire Your Anxious Brain</h3>
+                <p>Nick Trenton</p>
+                <a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.70fd741c-68a9-470a-9805-115e3115104d%3Aamzn1.sym.70fd741c-68a9-470a-9805-115e3115104d&crid=2QY6T9RS2BRQW&cv_ct_cx=self-help+books&keywords=self-help+books&pd_rd_i=936411910X&pd_rd_r=bb28cb43-26fb-48b6-9b22-bb8bd246eaaa&pd_rd_w=IvrkU&pd_rd_wg=v3Jyi&pf_rd_p=70fd741c-68a9-470a-9805-115e3115104d&pf_rd_r=E2FNW9KKGB5H8Z7Q0VV0&qid=1743710380&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=self-help+books%2Caps%2C202&sr=1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 8 -->
+            <div class="resource-item">
+                <img src="images/book8.jpg" alt="The Mountain Is You">
+                <h3>The Mountain Is You</h3>
+                <p>Brianna Wiest</p>
+                <a href="https://www.amazon.in/Mountain-You-Transforming-Self-Sabotage-Self-Mastery/dp/9355434146/ref=sr_1_5?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743710380&sprefix=self-help+books%2Caps%2C202&sr=8-5" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book  9-->
+            <div class="resource-item">
+                <img src="images/book9.jpg" alt="Good Vibes, Good Life">
+                <h3>Good Vibes, Good Life</h3>
+                <p>Vex King</p>
+                <a href="https://www.amazon.in/gp/aw/d/9386832836/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=0ac2c78565d12715001f235303ccc0d0&hsa_cr_id=0&qid=1743710380&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_1_img&pd_rd_w=KdBRM&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=E2FNW9KKGB5H8Z7Q0VV0&pd_rd_wg=hU5jn&pd_rd_r=34a96de6-cdcc-4b62-9686-3272d8db68fb" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 10 -->
+            <div class="resource-item">
+                <img src="images/book10.jpg" alt="The 5 AM Club – Own Your Morning">
+                <h3>The 5 AM Club – Own Your Morning</h3>
+                <p>Robin Sharma</p>
+                <a href="https://www.amazon.in/AM-Club-Your-Morning-Elevate/dp/9387944891/ref=sr_1_19?crid=3OGV51TMR2JLF&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743712037&sprefix=%2Caps%2C187&sr=8-19" class="resource-link">View Book →</a>
+            </div>
+            <!-- Book 11 -->
+            <div class="resource-item">
+                <img src="images/book-featured.jpg" alt="Don't Believe Everything You Think ">
+                <h3>Don't Believe Everything You Think </h3>
+                <p>Joseph Nguyen</p>
+                <a href="https://www.amazon.in/Dont-Believe-Everything-You-Think/dp/935543135X/ref=sr_1_4?crid=2QY6T9RS2BRQW&dib=eyJ2IjoiMSJ9.zfpnWasKSGMBFZPM4jngiMuiYnf898PBbggYItWNZ2mY6wqMllLxJgKjMjyzPVMB8LzjnKyP496EnsqitrSO-ObUgSwvZKtJreC7uyMcgV-NsuCC2ZyrF4d7fgFBfJxc82QHweP0Ylh-uKrjX8VXOZiKuApzV6SjjzpsLrN2UYohRmahIKxRszOHtAmHRFvuFv3gLVB5iJfbT8D2ISwe8MJkTXp1aM5Awp6OafEWqNM.t1G5xN5LNSsCm7D4BwvZuMhX5vYkXf6MZ8xgREuj0ig&dib_tag=se&keywords=self-help+books&qid=1743710380&sprefix=self-help+books%2Caps%2C202&sr=8-4" class="resource-link">View Book →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcasts Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>Mental Health Podcasts</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <div class="resources-grid">
+            <!-- Podcast 1 -->
+            <div class="resource-item">
+                <img src="images/podcast1.jpeg" alt="The Happiness Lab">
+                <h3>The Happiness Lab</h3>
+                <p>Dr. Laurie Santos - Science of happiness</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/3i5TCKhc6GY42pOWkpWveG#login" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/the-happiness-lab-with-dr-laurie-santos/id1474245040" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 2 -->
+            <div class="resource-item">
+                <img src="images/podcast2.jpg" alt="The Mental Illness Happy Hour">
+                <h3>The Mental Illness Happy Hour</h3>
+                <p>Paul Gilmartin's podcast shares mental health stories weekly.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/1ax4naBUwDvyB1YDRugdZo" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/gb/podcast/the-mental-illness-happy-hour-paul-gilmartins-journey/id1550640756?i=1000700836646" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 3 -->
+            <div class="resource-item">
+                <img src="images/podcast3.jpeg" alt="Terrible, Thanks for Asking">
+                <h3>Terrible, Thanks for Asking</h3>
+                <p>Nora McInerny dives deep with guests on how they're really doing.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/episode/52TmU3PJd6dqnaI0RECbIQ" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/si/podcast/thanks-for-asking/id1126119288" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 4 -->
+            <div class="resource-item">
+                <img src="images/podcast4.jpeg" alt="The Hilarious World of Depression">
+                <h3>The Hilarious World of Depression</h3>
+                <p>John Moe's guests share honest, funny stories about depression.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/0nVNURZtqEoycVvrsIWAM5" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/gb/podcast/the-hilarious-world-of-depression/id1181589175" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 5 -->
+            <div class="resource-item">
+                <img src="images/podcast5.jpeg" alt="We Can Do Hard Things">
+                <h3>We Can Do Hard Things</h3>
+                <p>Glennon Doyle and team talk openly about daily struggles.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/0eFL5HJejQHZrdgAFdPnOm#login" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/we-can-do-hard-things/id1564530722" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 6 -->
+            <div class="resource-item">
+                <img src="images/podcast6.jpeg" alt="I Weigh">
+                <h3>I Weigh</h3>
+                <p>Jameela Jamil challenges beauty norms, explores mental health.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/48QtcFDDyQzKIc4B0fo4V7" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="http://podcasts.apple.com/in/podcast/i-weigh-with-jameela-jamil/id1498855031" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 7 -->
+            <div class="resource-item">
+                <img src="images/podcast7.jpg" alt="Therapy for Black Girls">
+                <h3>Therapy for Black Girls</h3>
+                <p>Therapy for Black Girls tackles mental health for women of color.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/7kPXrtK66kXyiqpKTtsqNN" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/therapy-for-black-girls/id1223803641 " class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 8 -->
+            <div class="resource-item">
+                <img src="images/podcast8.jpeg" alt="Where Should We Begin?">
+                <h3>Where Should We Begin?</h3>
+                <p>Esther Perel guides real couples through therapy sessions.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/3fKOTwtnX5oZLaiNntKWAV" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/where-should-we-begin-with-esther-perel/id1237931798" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 9 -->
+            <div class="resource-item">
+                <img src="images/podcast9.jpeg" alt="Feel Better, Live More">
+                <h3>Feel Better, Live More</h3>
+                <p>Dr. Rangan Chatterjee simplifies modern health and wellness.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/6NyPQfcSR9nj0DPDr2ixrK" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/gb/podcast/feel-better-live-more-with-dr-rangan-chatterjee/id1333552422" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+            <!-- Podcast 10 -->
+            <div class="resource-item">
+                <img src="images/podcast10.jpg" alt="Happier With Gretchen Rubin">
+                <h3>Happier With Gretchen Rubin</h3>
+                <p>Gretchen Rubin shares simple tips for everyday happiness.</p>
+                <div class="platform-links">
+                    <a href="https://open.spotify.com/show/0rgMTVJ9TWDWsut3R1c5L3" class="platform-link spotify"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/happier-with-gretchen-rubin/id969519520" class="platform-link apple"><i class="fab fa-apple"></i> Apple</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Channels Section -->
+    <section class="resource-section">
+        <div class="section-header">
+            <h2>YouTube Channels</h2>
+            <!-- <a href="#" class="see-more">See More</a> -->
+        </div>
+        <div class="resources-grid">
+            <!-- Channel 1 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube1.jpg" alt="The School of Life">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>The School of Life</h3>
+                <p>Emotional intelligence education</p>
+                <a href="https://www.youtube.com/@theschooloflifetv" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 2 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube2.jpg" alt="Psych2Go">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>Psych2Go</h3>
+                <p>Psychology made accessible</p>
+                <a href="https://www.youtube.com/@Psych2go" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 3 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube3.jpg" alt="Therapy in a Nutshell">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>Therapy in a Nutshell</h3>
+                <p>Practical therapy skills</p>
+                <a href="https://www.youtube.com/@TherapyinaNutshell" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 4 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube4.jpg" alt="Meditation Vacation">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>Meditation Vacation</h3>
+                <p>Guided meditations</p>
+                <a href="https://www.youtube.com/@MeditationVacation" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 5 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube5.jpg" alt="How to ADHD">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>How to ADHD</h3>
+                <p>ADHD Toolbox</p>
+                <a href="https://www.youtube.com/@HowtoADHD" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 6 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube6.jpg" alt="The Anxiety Guy">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>The Anxiety Guy</h3>
+                <p>Top anxiety expert and mental health author, Dennis Simsek</p>
+                <a href="https://www.youtube.com/@TheAnxietyGuy1" class="resource-link">Visit Channel →</a>
+            </div>
+            <!-- Channel 7 -->
+            <div class="resource-item">
+                <div class="video-thumbnail">
+                    <img src="images/youtube7.jpg" alt="Julia Kristina Counselling">
+                    <div class="play-button"><i class="fab fa-youtube"></i></div>
+                </div>
+                <h3>Julia Kristina Counselling</h3>
+                <p>Mental wellness and personal development</p>
+                <a href="https://www.youtube.com/@juliakristinamah" class="resource-link">Visit Channel →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ENCOURA Logo">
+                <h3>ENCOURA</h3>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="chatbot.html">Chatbot</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+                <div class="link-group">
+                    <h4>About</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:support@encoura.com">support@encoura.com</a>
+                    <!-- <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            <p>Encoura – An AI-Driven Chatbot for Mental Health Support</p>
+        </div> -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper with proper configuration
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // Add these for better compatibility
+                slidesPerView: 1,
+                spaceBetween: 20,
+                effect: 'slide',
+                grabCursor: true
+            });
+
+            // See More functionality
+            document.querySelectorAll('.see-more').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const section = this.closest('.resource-section');
+                    const hiddenItems = section.querySelectorAll('.resource-item.hidden');
+                    
+                    // Show next 4 hidden items
+                    Array.from(hiddenItems).slice(0, 4).forEach(item => {
+                        item.classList.remove('hidden');
+                    });
+
+                    // Hide button if no more items
+                    if (section.querySelectorAll('.resource-item.hidden').length === 0) {
+                        this.style.display = 'none';
+                    }
+                });
+            });
+
+            // Audio player functionality
+            document.querySelectorAll('.audio-play-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const audio = this.nextElementSibling;
+                    if (audio.paused) {
+                        audio.play();
+                        this.innerHTML = '<i class="fas fa-pause"></i>';
+                    } else {
+                        audio.pause();
+                        this.innerHTML = '<i class="fas fa-play"></i>';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

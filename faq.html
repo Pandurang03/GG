@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoura - FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ========== FAQ PAGE INLINE STYLES ========== */
+        /* Dark Mode Variables */
+        :root {
+            --light-bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --text-color: #333333;
+            --primary-color: #6c63ff;
+            --secondary-color: #4d44db;
+        }
+
+        .dark-mode {
+            --dark-bg: #1a1a1a;
+            --dark-card: #2d2d2d;
+            --dark-text-color: #f0f0f0;
+            --primary-color: #8a84ff;
+            --secondary-color: #6c63ff;
+        }
+
+        /* About Cards Section */
+        .about-website {
+            padding: 4rem 5%;
+            background: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        .dark-mode .about-website {
+            background: var(--dark-bg);
+            color: var(--dark-text-color);
+        }
+
+        /* Accordion Section */
+        .how-to-use {
+            padding: 4rem 5%;
+            background: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        .dark-mode .how-to-use {
+            background: var(--dark-bg);
+            color: var(--dark-text-color);
+            text-decoration-color: var(--dark-text-color);
+        }
+
+        
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-item.active .accordion-content-inner {
+            padding: 0 2rem 2rem;
+        }
+
+        .accordion-item.active .accordion-btn i:last-child {
+            transform: rotate(180deg);
+        }
+        .dark-mode .accordion-btn{
+            color: var(--dark-text-color);
+        }
+        .accordion-content{
+            color: #f0f0f0;
+        }
+        /* Contact Card Section */
+        .contact-help {
+            padding: 4rem 5%;
+            background: var(--light-bg);
+        }
+
+        .dark-mode .contact-help {
+            background: var(--dark-bg);
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="ENCOURA Logo">
+            <h1>ENCOURA</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="faq-hero">
+        <div class="faq-hero-content">
+            <div class="faq-icon">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <h1>Frequently Asked Questions</h1>
+            <p>Find quick answers to everything you need</p>
+        </div>
+    </section>
+
+    <!-- About Cards -->
+    <section class="about-website">
+        <h2>About Encoura</h2>
+        <div class="about-cards">
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-comment-dollar"></i>
+                </div>
+                <h3>Is this free?</h3>
+                <p>100% free forever - no hidden costs</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-user-clock"></i>
+                </div>
+                <h3>Available 24/7</h3>
+                <p>Support whenever you need it</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Private & Secure</h3>
+                <p>Your data stays with you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="how-to-use">
+        <h2>Common Questions</h2>
+        <div class="accordion">
+            <!-- Question 1 -->
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <i class="fas fa-robot"></i> How does the chatbot work?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Our AI chatbot uses natural language processing to understand your concerns and provide supportive responses. It's trained on mental health best practices but doesn't replace professional care.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <i class="fas fa-shield-alt"></i> Is my privacy protected?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Yes! We don't store personal conversations. All chats are anonymized.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <i class="fas fa-mobile-alt"></i> Mobile friendly?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Absolutely! ENCOURA works perfectly on all devices. Try the breathing exercises on your phone - they're optimized for touch.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <i class="fas fa-book"></i> How often are resources updated?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>We add new mental health resources every week. Subscribe to our newsletter for updates!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-help">
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h2>Still need help?</h2>
+            <p>Found a bug or want to say hi? Email us directly at:  <a href="mailto:support@encoura.com" class="email-link">support@encoura.com</a></p>
+            <br>
+            <a href="mailto:support@encoura.com" class="btn">Send Message</a>
+            <p class="response-time">Typical response time: <strong>under 24 hours</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ENCOURA Logo">
+                <h3>ENCOURA</h3>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="chatbot.html">Chatbot</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+                <div class="link-group">
+                    <h4>About</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:support@encoura.com">support@encoura.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inline JavaScript for FAQ Page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Theme Toggle
+            const themeToggle = document.querySelector('.theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const body = document.body;
+            
+            // Load saved theme or prefer color scheme
+            const savedTheme = localStorage.getItem('theme') || 
+                            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+            
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                themeIcon.classList.toggle('fa-moon', !isDark);
+                themeIcon.classList.toggle('fa-sun', isDark);
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+            
+            // FAQ Accordion Functionality
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const btn = item.querySelector('.accordion-btn');
+                
+                btn.addEventListener('click', () => {
+                    // Close all other accordion items
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle the clicked item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
